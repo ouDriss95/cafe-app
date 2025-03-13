@@ -6,65 +6,128 @@
 }
 
 body {
-  margin: 0;
   font-family: "Inter", sans-serif;
-}
-
-/* Header */
-.header {
-  position: relative;
-
-  .background-img {
-    width: 100%;
-  }
-
-  .header-title {
-    position: absolute;
-    color: #fff;
-    font-size: 35px;
-    top: 36%;
-    left: 30%;
-  }
-}
-
-/* Form */
-.form-wrapper {
   display: flex;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.header {
+  background-image: url("../assets/background-img-1.jpg");
+  background-size: cover;
+  color: white;
+  height: 171px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding-top: 40px;
+}
+
+.header h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+/* Content */
+
+.content {
+  padding: 55px 20px 0 20px;
+  display: flex;
   flex-direction: column;
+  height: 100%;
+}
 
-  .btn-switch {
-    width: 270px;
-    background-color: #faf2eb;
-    padding: 8px 0px 8px 0;
-    border-radius: 40px;
-    border: 2px solid #834d1e;
-    overflow: hidden;
+.content form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
-    .login {
-      background-color: #834d1e;
-      padding: 12px 55px;
-      border-radius: 50px;
-      text-decoration: none;
-      color: #fff;
-      font-size: 12px;
-      outline: 1px solid #834d1e;
-    }
+.toggle-container {
+  display: flex;
+  width: 320px;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 2px solid #8f5c45;
+  align-self: center;
+  margin-bottom: 40px;
+  align-items: center;
+}
 
-    .signup {
-      font-size: 12px;
-      text-decoration: none;
-      color: #834d1e;
-      padding-left: 22px;
-    }
-  }
+.toggle-button {
+  flex: 1;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
 
-  .form-inputs {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 40px;
-    padding: 0 30px;
-  }
+.login {
+  background: #8f5c45;
+  color: white;
+  border-radius: 0 30px 30px 0;
+}
+
+.signup {
+  background: #faf2eb;
+  color: #8f5c45;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #edd5bb;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.password-container img {
+  width: 17px;
+}
+
+.forgot-password {
+  text-align: right;
+  color: #422619;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.submit-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.login-button {
+  width: 100%;
+  padding: 16px 10px;
+  background-color: #8f5c45;
+  border: none;
+  color: white;
+  font-size: 19px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.line {
+  height: 5px;
+  background-color: black;
+  border-radius: 20px;
+  max-width: 120px;
+  width: 100%;
 }

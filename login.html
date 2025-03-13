@@ -3,34 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="/styles/login.css" />
+
     <title>Cafe app - Login</title>
   </head>
   <body>
-    <header class="header">
-      <img class="background-img" src="assets/background-img-1.jpg" alt="" />
-      <h1 class="header-title">Welcome</h1>
-    </header>
-    <main>
-      <form class="form-wrapper" action="">
-        <div class="btn-switch">
-          <a class="login" href="#login">Login</a>
-          <a class="signup" href="#signup">Sign Up</a>
+    <div class="container">
+      <header class="header">
+        <h1>Welcome</h1>
+      </header>
+      <main class="content">
+        <div class="toggle-container">
+          <a class="toggle-button login">Login</a>
+          <a class="toggle-button signup">Sign Up</a>
         </div>
+        <form>
+          <div class="inputs-wrapper">
+            <input
+              type="text"
+              placeholder="Username or email"
+              class="input-field"
+            />
+            <div class="password-container">
+              <input
+                type="password"
+                placeholder="Password"
+                class="input-field"
+              />
+              <img src="/assets/icons/eye-invisible.svg" alt="" />
+            </div>
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
 
-        <div class="form-inputs">
-          <input type="text" name="fname" value="Username or email" />
-
-          <input type="password" name="lname" value="Password" />
-          <input type="submit" value="Submit" />
-        </div>
-      </form>
-    </main>
+          <div class="submit-wrapper">
+            <button type="submit" class="login-button">Login</button>
+            <div class="line"></div>
+          </div>
+        </form>
+      </main>
+    </div>
   </body>
 </html>
